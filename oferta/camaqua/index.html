@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Costa Shop / Oferta</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      var DateInstance = new Date()
+      var countDownDate = DateInstance.setUTCDate(DateInstance.getUTCDate() + 1)
+
+      var x = setInterval(function () {
+        var now = new Date().getTime()
+        var distance = countDownDate - now
+
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        )
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000)
+
+        document.getElementById("offer").innerHTML =
+          hours + "h " + minutes + "m " + seconds + "s "
+
+        document.getElementById("offer-two").innerHTML =
+          hours + "h " + minutes + "m " + seconds + "s "
+      }, 1000)
+    </script>
+  </head>
+  <body>
+    <header>
+      <div id="Logo"><img src="images/logo.png" /></div>
+      <div id="CTA">
+        <a href="#"
+          ><img src="images/social/whatsapp.svg" />Divulgar minha empresa!</a
+        >
+      </div>
+    </header>
+    <main>
+      <section id="Hero">
+        <div class="content grid-half">
+          <div id="HeroText">
+            <span>Plataforma de anúncios</span>
+            <h1>
+              Chegou em <b>Camaquã</b> a maior <b>vitrine digital</b> da
+              <b>Costa Doce Gaúcha</b>.
+            </h1>
+            <p>
+              Conquiste <b>novos clientes</b> e <b>vendas</b> em uma
+              <b>plataforma digital</b> criada especialmente para
+              <b>pequenas e médias empresas</b> da <b>Costa Doce Gaúcha</b>.
+            </p>
+            <div id="Button" class="btn-primary">
+              <a href="#">Como funciona?</a>
+            </div>
+          </div>
+          <div id="Countdown">
+            <div class="content">
+              <span>Oferta por tempo limitado</span>
+              <h1 id="offer"></h1>
+              <p>
+                <b>Condições especiais</b> para você
+                <b>divulgar sua empresa</b> na maior <b>vitrine digital</b> da
+                <b>Costa Doce Gaúcha</b>.
+              </p>
+              <div id="Button" class="btn-secondary cta">
+                <a href="#">Garantir oferta!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="HowWorks">
+        <div class="content grid-third">
+          <div class="item">
+            <span>Passo 1</span>
+            <h3>Solicite <b>orçamento</b></h3>
+            <p>
+              Clique aqui e solicite seu orçamento sob condições especiais por
+              tempo limitado.
+            </p>
+          </div>
+          <div class="item">
+            <span>Passo 2</span>
+            <h3>Publique seu <b>anúncio</b></h3>
+            <p>
+              Envie seus dados e criaremos um anúncio totalmente personalizado
+              em nossa vitrine.
+            </p>
+          </div>
+          <div class="item">
+            <span>Passo 3</span>
+            <h3>Aumente suas <b>vendas</b></h3>
+            <p>
+              Pronto! Com seu anúncio publicado, aumente suas vendas e
+              faturamento mensal.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="CitiesList">
+        <head>
+          <span>Onde estamos</span>
+          <h2><b>Costa Doce</b> Gaúcha</h2>
+        </head>
+        <ul>
+          <li>Arambaré</li>
+          <li>Arroio Grande</li>
+          <li>Barra do Ribeiro</li>
+          <li>Camaquã</li>
+          <li>Canguçu</li>
+          <li>Cerrito</li>
+          <li>Chuí</li>
+          <li>Dom Feliciano</li>
+          <li>Guaíba</li>
+          <li>Jaguarão</li>
+          <li>Mariana Pimentel</li>
+          <li>Pedras Altas</li>
+          <li>Pedro Osório</li>
+          <li>Pelotas</li>
+          <li>Pinheiro Machado</li>
+          <li>Piratini</li>
+          <li>Rio Grande</li>
+          <li>Santana da Boa Vista</li>
+          <li>Santa Vitória do Palmar</li>
+          <li>Sentinela do Sul</li>
+          <li>Sertão Santana</li>
+          <li>São Lourenço do Sul</li>
+          <li>Tapes</li>
+          <li>Turuçu</li>
+        </ul>
+      </section>
+      <section id="Benefits" class="light-grey">
+        <head>
+          <span>Vantagens</span>
+          <h2>Por quê <b>anunciar</b> no <b>Costa Shop</b>?</h2>
+        </head>
+        <div class="content grid-forth">
+          <div class="item">
+            <h3>Publicidade <b>direcionada</b> para sua <b>região</b></h3>
+            <p>
+              A Costa Shop é a primeira vitrine digital para pequenas e médias
+              empresas da Costa Doce Gaúcha.
+            </p>
+          </div>
+          <div class="item">
+            <h3>Maior <b>custo benefício</b> que as mídias convencionais</h3>
+            <p>
+              Por uma pequena mensalidade, você garante sua presença digital
+              direcionada ao seu público-alvo.
+            </p>
+          </div>
+          <div class="item">
+            <h3><b>Presença digital</b> por um investimento acessível</h3>
+            <p>
+              Garanta a presença digital de sua empresa sem altos custos de
+              marketing e desenvolvimento.
+            </p>
+          </div>
+          <div class="item">
+            <h3>Raídez na criação de <b>novos anúncios</b>.</h3>
+            <p>
+              Entre em contato conosco e tenha seu anúncio conosco em até 72h
+              após o envio dos seus dados.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="Foot">
+        <div class="content grid-half">
+          <div class="FootText">
+            <span>Vai ficar de fora?</span>
+            <h2>
+              <b>Costa Shop</b> é uma empresa com raízes na nossa região, e
+              vamos fomentar o comércio de <b>produtos</b> e <b>serviços</b> da
+              <b>Costa Doce Gaúcha</b>.
+            </h2>
+          </div>
+          <div id="Countdown">
+            <div class="content">
+              <span>Oferta por tempo limitado</span>
+              <h1 id="offer-two"></h1>
+              <p>
+                <b>Condições especiais</b> para você
+                <b>divulgar sua empresa</b> na maior <b>vitrine digital</b> da
+                <b>Costa Doce Gaúcha</b>.
+              </p>
+              <div id="Button" class="btn-primary cta">
+                <a href="#">Garantir oferta!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
